@@ -100,3 +100,10 @@ button:hover {
         border-bottom: 10px;
     }
 }
+
+@media screen and (max-width: 764px) {
+    .calculator {
+        width: 80%;
+        height: 70%;
+    }
+}
