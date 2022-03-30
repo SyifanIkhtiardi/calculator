@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="brand">
+                <h3>DASIO</h3>
+                <p>MX-37</p>
+            </div>
+            <input type="text" class="calculator-screen" placeholder="0" disabled id = "output">
+            <div class="calculator-keys">
+                <div class="row">
+                    <button class="all-clear" onclick="Clear()">AC</button>
+                    <button class="delete" onclick="del()">Del</button>
+                    <button class="percentage" onclick="display('%')">%</button>
+                    <button class="operator" onclick="display('/')">&divide;</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="display('7')">7</button>
+                    <button class="number" onclick="display('8')">8</button>
+                    <button class="number" onclick="display('9')">9</button>
+                    <button class="operator" onclick="display('*')">&times;</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="display('4')">4</button>
+                    <button class="number" onclick="display('5')">5</button>
+                    <button class="number" onclick="display('6')">6</button>
+                    <button class="operator" onclick="display('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="display('1')">1</button>
+                    <button class="number" onclick="display('2')">2</button>
+                    <button class="number" onclick="display('3')">3</button>
+                    <button class="operator" onclick="display('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="display('0')">0</button>
+                    <button class="number" onclick="display('00')">00</button>
+                    <button class="decimal" onclick="display('.')">.</button>
+                    <button class="equal-sign" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

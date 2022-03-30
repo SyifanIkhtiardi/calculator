@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: azure;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand {
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+    margin-bottom: 5px;
+}
+h3, p {
+    background-color: inherit;
+    color: #e2e2e2;
+}
+
+.calculator {
+    width: 30%;
+    height: 80%;
+    box-shadow: 6px 6px 15px #b5b5b5;
+    padding: 30px 25px;
+    background-color: #747474;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+}
+.calculator-screen {
+    width: 100%;
+    height: 100px;
+    background-color: #e2e2e2;
+    font-size: 60px;
+    box-shadow: inset 5px 5px 10px #b5b5b5, inset -5px -5px 10px #ffffff;
+    border: none;
+    border-radius: 10px;
+    text-align: end;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.calculator-keys {
+    width: 100%;
+    border: none;
+    color: #333;
+}
+button {
+    border: none;
+    height: 50px;
+    width: 20%;
+    border-radius: 20px;
+    background: #e2e2e2;
+    box-shadow: 5px 5px 10px #2e2e2e, inset -5px -5px 10px #9b9b9b;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+button:hover {
+    background-color: #d4d3d3;
+    box-shadow: 6px 6px 12px #525252, inset -6px -6px 12px #e2e2e2;
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    background-color:   #747474;
+    justify-content: space-between;
+    border: none;
+}
+.delete, .all-clear {
+    background-color: rgb(255, 185, 55);
+    box-shadow: 5px 5px 10px #2e2e2e, inset -5px -5px 10px orange;
+}
+.delete:hover, .all-clear:hover{
+    background-color: rgb(250, 177, 42);
+    box-shadow: 6px 6px 12px #525252, inset -6px -6px 12px rgb(255, 185, 55);
+}
+.operator, .equal-sign, .percentage {
+    background-color: rgb(156, 156, 156);
+    box-shadow: 5px 5px 10px #2e2e2e, inset -5px -5px 10px gray;
+    color: #eeeded;
+}
+.operator:hover, .equal-sign:hover, .percentage:hover {
+    background-color: rgb(148, 148, 148);
+    box-shadow: 5px 5px 10px #525252, inset -5px -5px 10px rgb(156, 156, 156);
+    color: #eeeded;
+}
+@media screen and (max-width: 764px) {
+    .calculator {
+        width: 80%;
+    }
+    button {
+        font-size: 20px;
+        border-bottom: 10px;
+    }
+}
