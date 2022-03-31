@@ -2,6 +2,7 @@ let outputScreen = document.getElementById("output");
 
 const display = (number) => {
     outputScreen.value += number;
+    outputScreen.value = outputScreen.value.replace(/^0+/, '');
 }
 
 const calculate = () => {
